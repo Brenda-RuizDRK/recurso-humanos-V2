@@ -15,16 +15,16 @@ return new class extends Migration
             $table->id();
               $table->string('nombre');
             $table->string('no_empleado')->unique();
-            $table->string('fecha_nacimiento');
-            $table->string('fecha_ingreso');
-            $table->string('sexo');
-            $table->string('telefono');
-            $table->string('correo');
-            $table->string('contacto_emergencia');
-            $table->string('tipo_empleado');
+            $table->string('fecha_nacimiento')->nullable();
+            $table->string('fecha_ingreso')->nullable();
+            $table->string('sexo')->nullable();
+            $table->string('telefono')->nullable();
+            $table->string('correo')->nullable();
+            $table->string('contacto_emergencia')->nullable();
+            $table->string('tipo_empleado')->nullable();
             $table->foreignId('puesto_id')->nullable()->constrained('puestos')->nullOnDelete();
             $table->foreignId('rol_id')->nullable()->constrained('rols')->nullOnDelete();
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->string('password');
 
 
