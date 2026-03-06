@@ -30,7 +30,7 @@ export default function Login() {
                     <div>
                         <h1 className="text-4xl font-bold mb-6 tracking-tight flex items-center gap-3">
                             <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><path fill="#F2B705" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.93V20a8 8 0 01-8-8h2.07A6 6 0 0013 18.93zM4.07 13H2a8 8 0 018-8v2.07A6 6 0 004.07 13zm7.93-7.93V4a8 8 0 018 8h-2.07A6 6 0 0012 4.07zm7.93 7.93h2a8 8 0 01-8 8v-2.07A6 6 0 0020.93 12z" /></svg>
-                            Portal Corporativo
+                            Portal Corporativo  de recursos humanos
                         </h1>
                         <div className="h-1 w-20 bg-[#F2B705] mb-8 rounded"></div>
                         <p className="text-lg text-blue-100 leading-relaxed max-w-md">
