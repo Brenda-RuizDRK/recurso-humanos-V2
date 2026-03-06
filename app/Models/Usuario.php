@@ -16,21 +16,20 @@ class Usuario extends Authenticatable
     
     protected $table = 'usuarios';
     protected $fillable = [
-        'nombre',
-        'apellido',
-        'no_empleado',
-        'email',
-        'telefono',
-        'direccion',
-        'fecha_nacimiento',
-        'contacto_emergencia',
-        'tipo_empleado',
-        'puesto_id',
-        'epp_asignao_id',
-        'rol_id',
-        'status',
-        'password'
-    ];
+    'nombre',
+    'no_empleado',
+    'fecha_nacimiento',
+    'fecha_ingreso',
+    'sexo',
+    'telefono',
+    'correo',
+    'contacto_emergencia',
+    'tipo_empleado',
+    'puesto_id',
+    'rol_id',
+    'status',
+    'password'
+];
 
        protected $hidden = [
         'password',
@@ -47,10 +46,7 @@ class Usuario extends Authenticatable
         return $this->belongsTo(Rol::class);
     }
 
-    public function equipoProteccion()
-    {
-        return $this->belongsTo(EquipoProteccion::class, 'epp_asignao_id');
-    }
+
 
     public function hasPermission(string $permission): bool
 {
